@@ -18,12 +18,12 @@ def htop():
     top_output = get_top_output()
     
     response = f"""
-    <h1>Name: Deepanshu Tomar</h1>
+    <h1>Name: Anirudh Sharma</h1>
     <h2>Username: {system_username}</h2>
     <h3>Server Time (IST): {ist_time.strftime('%Y-%m-%d %H:%M:%S')}</h3>
     <pre>{top_output}</pre>
     """
     return response
-
-if _name_ == '__main__':
+if __name__ == '__main__':  # ✅ Corrected syntax
     app.run(host='0.0.0.0', port=5000)
+
